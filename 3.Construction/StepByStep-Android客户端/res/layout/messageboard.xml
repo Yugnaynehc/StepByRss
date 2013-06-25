@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/show_EX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:text="主    题     展   示 "
+        android:textColor="#9966cc"
+        android:textSize="30dip" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:gravity="top"
+        android:hint="说点什么吧……"
+        android:textSize="15dip" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#cc99cc" >
+
+        <Button
+            android:id="@+id/fabu_btn"
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:text="发 布"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/show_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip" >
+
+            <ListView
+                android:id="@+id/PLList"
+                android:layout_width="fill_parent"
+                android:layout_height="4000dip"
+                 >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

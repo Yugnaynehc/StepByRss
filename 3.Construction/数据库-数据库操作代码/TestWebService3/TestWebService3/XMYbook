@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--创建时间@2013/4/11 9:47:58-->
+<MYBook>
+  <book id="1" name="易学C#">
+    <description>一本C#学习书籍</description>
+    <price>45</price>
+    <press>人民邮电出版社</press>
+  </book>
+  <book id="2" name="ASP.NET4程序设计">
+    <description>一本ASP.NET4学习书籍</description>
+    <price>100</price>
+    <press>机械工业出版社</press>
+  </book>
+</MYBook>

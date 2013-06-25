@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/fabuIMG"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:background="@drawable/fabu" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fabuIMG"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/wanted_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/wanted_person_name"
+                android:textColor="#ff0033"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/wanted_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/wanted_person_name"
+                android:text="悬赏人："
+                android:textColor="#ff0033"
+                android:textSize="18dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <EditText
+            android:id="@+id/themeName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/creatEX"
+            android:layout_toRightOf="@+id/theme"
+            android:hint="经验标题"
+            android:singleLine="true"
+             >
+        </EditText>
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="主题:"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip" >
+
+        <ImageView
+            android:id="@+id/needtools"
+            android:layout_width="58dp"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/EXcontent"
+            android:background="@drawable/tool" />
+
+        <EditText
+            android:id="@+id/EX_needtools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/needtools"
+            android:layout_below="@+id/EXcontent"
+            android:layout_toRightOf="@+id/needtools"
+            android:gravity="top"
+            android:hint="（无）"
+            android:maxLength="80"
+            android:singleLine="false" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/last"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="概要"
+            android:textColor="#333399"
+            android:textSize="25dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:layout_centerHorizontal="true" 
+            android:layout_below="@+id/addpicture"  />
+
+        <EditText
+            android:id="@+id/EXcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="170dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:hint="经验的简单描述……" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/addpicture"
+            android:layout_width="180dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/EXcontent"
+            android:layout_centerHorizontal="true"
+            android:text="添加图片"
+            android:textSize="20dip" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp" >
+
+        <Button
+            android:id="@+id/publish_btn"
+            android:layout_width="250dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:background="#6699cc"
+            android:text="发     布"
+            android:textColor="#000000"
+            android:textSize="32dip" />
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>

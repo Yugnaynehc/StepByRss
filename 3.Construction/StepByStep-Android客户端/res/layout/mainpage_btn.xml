@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal" >
+    
+		<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/myEX"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="我发布的经验"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/mycommentEX"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="我评论的经验"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/messageboard"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="留言板"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         
+        
+    
+</LinearLayout>
