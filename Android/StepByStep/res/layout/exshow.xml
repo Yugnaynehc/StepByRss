@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/SearchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" 
+        android:background="#99cc33">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <ImageButton
+                android:id="@+id/ObjectButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/know" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" >
+
+            <EditText
+                android:id="@+id/SearchText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1" >
+
+            <ImageButton
+                android:id="@+id/SearchButton"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dip" 
+        android:layout_margin="5dip"
+        >
+
+        <ImageButton
+            android:id="@+id/I2"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/I1"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/I4"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageButton
+            android:id="@+id/I3"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/show_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip" >
+
+            <ListView
+                android:id="@+id/EXList2"
+                android:layout_width="match_parent"
+                android:layout_height="4000dip"
+                android:layout_margin="5dip" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

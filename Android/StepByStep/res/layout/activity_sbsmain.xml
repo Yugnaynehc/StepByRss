@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	
+	<LinearLayout
+	    android:id="@+id/main_layout"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="vertical" 
+   		android:layout_weight="10000">
+    
+	</LinearLayout>
+	<include android:id="@+id/main_muen"
+	    layout="@layout/mainmuen" />"
+</LinearLayout>

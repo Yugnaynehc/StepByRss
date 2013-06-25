@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal" >"
+    
+		<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/TAEX"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="TA的经验"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/TAcommentEX"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="给TA留言"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+         <Button  
+             	android:id="@+id/payattention"
+             	android:layout_height="wrap_content"
+             	android:layout_width="160dip"
+             	android:text="关注"
+             	android:textSize="20dip"
+             	android:layout_margin="3dip"
+             	android:layout_centerInParent="true" />
+         </RelativeLayout>
+         
+        
+    
+</LinearLayout>

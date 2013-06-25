@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StepByStep</string>
+    <string name="action_settings">Settings</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    
+    <string name="title1">苹果在中国市场：Google的劣势反而是苹果的优势</string>
+    <string name="title2">吞噬大数据存储领域新机制——NoSQL模式解析</string>
+    <string name="title3">神舟九号：宇航员会携带什么移动应用上天？</string>
+    <string name="title4">2012苹果全球开发者大会（WWDC）12日开幕</string>
+    <string name="title5">Win8说：请把PC丢出窗外！</string>
+    <string name="mainpage_btn">更多</string>
+    <string name="user_name">小邹邹</string>
+    <string name="user_info">你是我的小小邹，我是你骨头！</string>
+    <string name="user_EX_num">0</string>
+    <string name="wanted_person_name">无</string>
+</resources>

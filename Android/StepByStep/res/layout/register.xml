@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:text="用户注册（带*号的为必填）"
+        android:textSize="20sp"></TextView>
+    <LinearLayout android:layout_width="fill_parent"  
+                  android:layout_height="wrap_content">  
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="账号:"
+                  android:paddingLeft="25dip"/>  
+        <EditText android:layout_width="200dip"  
+                  android:layout_height="wrap_content"  
+                  android:singleLine="true" 
+                  android:maxLength="16" 
+                  android:hint="只支持英文和数字"                
+                  android:id="@+id/appuserID"
+                  android:layout_marginLeft="28dip"/> 
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="*"/>        
+    </LinearLayout>  
+     <LinearLayout android:layout_width="fill_parent"  
+                  android:layout_height="wrap_content">  
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="密码:"
+                  android:paddingLeft="25dip"/>  
+        <EditText android:layout_width="200dip"  
+                  android:layout_height="wrap_content"  
+                  android:inputType="textPassword" 
+                  android:hint="请输入密码"
+                  android:maxLength="16"
+                  android:id="@+id/userPassword1"
+                  android:layout_marginLeft="28dip"/> 
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="*"/>   
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"  
+                  android:layout_height="wrap_content">  
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="重复密码:"
+                  android:paddingLeft="25dip"/>  
+        <EditText android:layout_width="200dip"  
+                  android:layout_height="wrap_content"  
+                  android:inputType="textPassword" 
+                  android:hint="请输入密码"
+                  android:maxLength="16"
+                  android:id="@+id/userPassword2"   /> 
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="*"/>   
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"  
+                  android:layout_height="wrap_content">  
+        <TextView android:layout_width="wrap_content"  
+                  android:layout_height="wrap_content"  
+                  android:text="邮箱:"
+                  android:paddingLeft="25dip"/>  
+        <EditText android:layout_width="200dip"  
+                  android:layout_height="wrap_content"                    
+                  android:id="@+id/useremail" 
+                  android:layout_marginLeft="28dip"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+   
+    </LinearLayout>
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+	</LinearLayout>
+	<Button  
+	     android:layout_width="150dip"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:text="提交" 
+	     android:textSize="25dip"
+	     android:background="#0099cc"
+	     android:id="@+id/submit" />
+	
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ImageView 
+        android:id="@+id/wantedIMG"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" 
+        android:src="@drawable/wanted"
+		/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"  >
+        <TextView 
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="32dip"
+        	android:text="主题:"
+        	android:gravity="center"
+            android:layout_marginTop="5dip" ></TextView>
+        <EditText
+            android:id="@+id/themeName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/theme"
+            android:hint="悬赏标题(20字以内)"
+            android:scrollbars="vertical"
+			android:singleLine="false"
+			android:maxLength="20">
+			</EditText>      
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"  >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="概要"
+            android:textColor="#333399"
+            android:textSize="32dip" />
+
+        <EditText
+            android:id="@+id/EXcontent"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/content"
+            android:gravity="top" 
+            android:hint="悬赏经验的简单描述(100字以内)……"
+            android:scrollbars="vertical"
+			android:singleLine="false" 
+			android:maxLength="100"> 
+        </EditText>
+
+        <TextView
+            android:id="@+id/wantedEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/content"
+            android:layout_below="@+id/EXcontent"
+            android:layout_marginRight="37dp"
+            android:text="悬赏EX:"
+            android:textColor="#551133"
+            android:textSize="32dip" />
+
+        <EditText
+            android:id="@+id/wantedEX_num"
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/wantedEX"
+            android:layout_alignLeft="@+id/content"
+            android:layout_below="@+id/EXcontent"
+            android:layout_marginLeft="34dp"    
+            android:numeric="integer"
+			android:singleLine="true"
+			android:maxLength="3"
+			
+			 >"
+
+        </EditText>
+
+	</RelativeLayout> 
+		<RelativeLayout
+		   	 android:layout_width="fill_parent"
+       		 android:layout_height="match_parent" 
+		   	 android:layout_weight="1"		>
+
+		    <Button
+		        android:id="@+id/want_btn"
+		        android:layout_width="250dip"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_margin="5dip"
+		        android:background="#ff0033"
+		        android:text="悬     赏"
+		        android:textColor="#000000"
+		        android:textSize="32dip" />
+
+		</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

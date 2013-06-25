@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="  修改资料   "
+            android:textSize="24dip" />
+
+        <Button
+            android:id="@+id/queding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textSize="20dip" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lines3"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/image_page_bg" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/show_deteil2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <EditText
+                    android:id="@+id/T11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t11"
+                    android:text="........." />
+                <EditText
+                    android:id="@+id/T22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/T11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t22"
+                    android:text="........."
+                     />
+                <EditText
+                    android:id="@+id/T33"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/T22"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t33"
+                    android:text="........." 
+                    android:layout_marginTop="20dip"/>
+                <EditText
+                    android:id="@+id/T44"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/T33"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t44"
+                    android:text="........." />
+                <EditText
+                    android:id="@+id/T55"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/T44"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t55"
+                    android:text="........." 
+                    android:layout_marginTop="20dip"/>
+                <EditText
+                    android:id="@+id/T66"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dip"
+                    android:layout_below="@+id/T55"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/t66"
+                    android:singleLine="false"
+                    android:text="........." />
+
+                <TextView
+                    android:id="@+id/t66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T66"
+                    android:layout_alignBottom="@+id/T66"
+                    android:layout_toLeftOf="@+id/T55"
+                    android:text="个人签名:" />
+
+                <TextView
+                    android:id="@+id/t55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T55"
+                    android:layout_alignBottom="@+id/T55"
+                    android:layout_toLeftOf="@+id/T44"
+                    android:text="爱好:" />
+
+                <TextView
+                    android:id="@+id/t44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T44"
+                    android:layout_alignBottom="@+id/T44"
+                    android:layout_toLeftOf="@+id/T33"
+                    android:text="手机:" />
+
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T33"
+                    android:layout_alignBottom="@+id/T33"
+                    android:layout_alignLeft="@+id/t22"
+                    android:text="邮箱:" />
+
+                <TextView
+                    android:id="@+id/t22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T22"
+                    android:layout_alignBottom="@+id/T22"
+                    android:layout_toLeftOf="@+id/T11"
+                    android:text="昵称:" />
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/T11"
+                    android:layout_alignBottom="@+id/T11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="76dp"
+                    android:text="用户账号:" />
+                <Button
+            android:id="@+id/changepic"
+            android:layout_width="180dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/t66"
+            android:layout_centerHorizontal="true"
+            android:text="更改头像"
+            android:textSize="20dip" />
+                <ImageView
+            android:id="@+id/pic"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerHorizontal="true" 
+            android:layout_below="@+id/changepic"  />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

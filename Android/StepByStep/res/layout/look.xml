@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/show_EX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="主    题     展   示 "
+            android:textColor="#9966cc"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_EX"
+            android:layout_centerHorizontal="true"
+            android:text="有0个人觉得很赞！ "
+            android:textColor="#ff0033"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dip" >
+
+            <TextView
+                android:id="@+id/content_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/needtools_layout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="概要"
+                android:textColor="#333399"
+                android:textSize="25dip" />
+
+            <RelativeLayout
+                android:id="@+id/needtools_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/needtools_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/needtools"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="无"
+                    android:textColor="#009999"
+                    android:textSize="22dip" />
+
+                <TextView
+                    android:id="@+id/needtools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工具:"
+                    android:textColor="#009999"
+                    android:textSize="22dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/EXshow"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_below="@+id/next_btn"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/picture_show"
+                android:layout_width="230dip"
+                android:layout_height="180dip"
+                android:layout_below="@+id/EXshow"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/content_show" />
+
+            <ImageButton
+                android:id="@+id/last_btn"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_above="@+id/EXshow"
+                android:layout_alignParentLeft="true" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picture_show" >
+
+                <ImageButton
+                    android:id="@+id/zan_btn"
+                    android:layout_width="90dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/publishman"
+                    android:layout_width="80dip"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/zan_btn" />
+
+                <ImageButton
+                    android:id="@+id/report"
+                    android:layout_width="70dip"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/publishman" />
+
+                <ImageButton
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/report" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

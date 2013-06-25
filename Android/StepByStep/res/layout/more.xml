@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/change_color"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="更改主题颜色"
+        android:textSize="20dip"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_color"
+        android:layout_centerHorizontal="true"
+        android:text="更改主页的主题颜色" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="250dip"
+        android:layout_height="40dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:background="#ff0033"
+        android:text=" 退   出  "
+        android:textSize="20dip" />
+
+</RelativeLayout>

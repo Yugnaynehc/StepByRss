@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ex_RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip" >
+
+    <TextView
+        android:id="@+id/want_IMG"
+        android:layout_width="100dip"
+        android:layout_height="58dip"
+        android:layout_margin="5px"
+        android:background="@drawable/wanted" />
+
+    <TextView
+        android:id="@+id/want_EX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="EX:0" />
+
+    <TextView
+        android:id="@+id/want_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_alignParentBottom="true"
+        android:text="writer" />
+
+    <TextView
+        android:id="@+id/want_Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/want_IMG"
+        android:text="悬赏的主题……"
+        android:textSize="12dip" />
+
+</RelativeLayout>
